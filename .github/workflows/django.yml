@@ -26,6 +26,7 @@ jobs:
         pip install -r requirements.txt
         pwd
         cd ..
+        pwd
         docker-compose -f docker-compose.prod.yml build 
         docker-compose down --remove-orphans
         docker-compose -f docker-compose.prod.yml up 
