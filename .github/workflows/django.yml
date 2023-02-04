@@ -25,6 +25,7 @@ jobs:
         . venv/bin/activate
         pip install -r requirements.txt
         pwd
+        cd ..
         docker-compose -f docker-compose.prod.yml build 
         docker-compose down --remove-orphans
         docker-compose -f docker-compose.prod.yml up 
